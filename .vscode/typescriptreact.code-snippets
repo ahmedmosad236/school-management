@@ -1,0 +1,78 @@
+{
+  "fcc": {
+    "prefix": "fcc",
+    "body": [
+      "import './${TM_FILENAME_BASE/^(.)/${1:/downcase}/}.css'",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+      "  return (",
+      "    <div className='${TM_FILENAME_BASE/^(.)/${1:/downcase}/}'>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}"
+    ],
+    "description": "Create an arrow component with css",
+    "scope": "typescript,typescriptreact"
+  },
+  "fcs": {
+    "prefix": "fcs",
+    "body": [
+      "import './${TM_FILENAME_BASE/^(.)/${1:/downcase}/}.scss'",
+      "",
+      "function ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}(){",
+      "  return (",
+      "    <div className='${TM_FILENAME_BASE/^(.)/${1:/downcase}/}'>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}"
+    ],
+    "description": "Create a functional component with Sass",
+    "scope": "typescript,typescriptreact"
+  },
+  "acs": {
+    "prefix": "acs",
+    "body": [
+      "import './${TM_FILENAME_BASE/^(.)/${1:/downcase}/}.scss'",
+      "",
+      "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+      "  return (",
+      "    <div className='${TM_FILENAME_BASE/^(.)/${1:/downcase}/}'>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}"
+    ],
+    "description": "Create an arrow component with Sass",
+    "scope": "typescript,typescriptreact"
+  },
+  "comp": {
+    "prefix": "comp",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+      "  return (",
+      "    <div>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}"
+    ],
+    "description": "Create a component",
+    "scope": "typescript,typescriptreact"
+  },
+  "compt": {
+    "prefix": "compt",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}} = () => {",
+      "  return (",
+      "    <div className=''>${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE/(.)(.*)/${1:/capitalize}${2}/}}"
+    ],
+    "description": "Create a component with tailwind classname",
+    "scope": "typescript,typescriptreact"
+  }
+}
